@@ -14,7 +14,7 @@ import lombok.Data;
  *
  */
 @Data
-@Document(indexName = "customer", type = "customer")
+@Document(indexName = "index_spring_es", type = "tutorial")
 public class Customer {
 	@Id
 	private String id = UUID.randomUUID().toString();

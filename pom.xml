@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.springboot.elasticsearch</groupId>
-	<artifactId>com.springboot.elasticsearch</artifactId>
+	<artifactId>ws.spring.elasticsearch</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>com.springboot.elasticsearch</name>
+	<name>Spring and ELK</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

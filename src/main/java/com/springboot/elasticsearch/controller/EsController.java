@@ -26,18 +26,7 @@ import io.swagger.annotations.SwaggerDefinition;
  * @author Rija RAMAMPIANDRA.
  *
  */
-@SwaggerDefinition(
-	    info = @Info(
-	        title = "Elastic search controller",
-	        version = "v1",
-	        description = "ES CRUD",
-	        contact = @Contact(
-	            name = "Rija RAMAMPIANDRA",
-	            email = "rijaramampiandra@gmail.com"
-	        )
-	    ),
-	    host = "http://localhost:8081/es"
-	)
+@SwaggerDefinition(info = @Info(title = "Elastic search controller", version = "v1", description = "ES CRUD", contact = @Contact(name = "Rija RAMAMPIANDRA", email = "rijaramampiandra@gmail.com")), host = "http://localhost:8081/es")
 @RestController
 @RequestMapping(path = "/es")
 public class EsController {
