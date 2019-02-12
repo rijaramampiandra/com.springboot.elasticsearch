@@ -19,6 +19,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.Contact;
 import io.swagger.annotations.Info;
 import io.swagger.annotations.SwaggerDefinition;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * Controller.
@@ -29,6 +30,7 @@ import io.swagger.annotations.SwaggerDefinition;
 @SwaggerDefinition(info = @Info(title = "Elastic search controller", version = "v1", description = "ES CRUD", contact = @Contact(name = "Rija RAMAMPIANDRA", email = "rijaramampiandra@gmail.com")), host = "http://localhost:8081/es")
 @RestController
 @RequestMapping(path = "/es")
+@Slf4j
 public class EsController {
 
 	@Autowired
@@ -37,6 +39,7 @@ public class EsController {
 	@GetMapping("/findByFirstName/{firstName}")
 	@ApiOperation(value = "Find by first name.")
 	public List<CustomerDto> findByFirstName(@PathVariable String firstName) {
+		log.info("Call WS find by first name");
 		return esService.findByFirstName(firstName);
 	}
 
