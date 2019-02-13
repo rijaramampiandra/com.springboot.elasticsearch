@@ -24,6 +24,8 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * Controller.
  * 
+ * WS for ES database.
+ * 
  * @author Rija RAMAMPIANDRA.
  *
  */
